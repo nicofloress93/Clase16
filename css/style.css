@@ -1,0 +1,358 @@
+h1{
+   color: rgba(157, 34, 34,0.8);
+   animation-duration: 3s;
+   animation-name: aparecer;
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+p{
+	color:rgb(115, 113, 113);
+    
+}	
+
+.textDark{
+         color: #434242;
+}
+
+#textStrong{
+	        color: darkred;
+}
+
+
+*{
+  color:#120577 ;
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+
+}
+
+html{
+	font-size: 62,5%;
+}
+
+
+
+
+nav ul li a{
+  font-family: roboto, sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  
+}
+
+nav ul li{
+	list-style-type: square;
+	
+
+}
+
+
+p{
+    font-family: roboto;
+	font-size: 1.3rem;
+	line-height: 2.4rem;
+	letter-spacing: 1px;
+    flex:1;
+    padding: 1rem;
+    margin:1px;
+}
+
+.textleft{
+         text-align: left;
+
+}
+
+h1{
+	font-size: 4rem;
+    text-align: center;
+    position: relative;
+    top: 5px;
+    flex:5;
+    padding: 1rem;
+    margin:2px;
+    font-family: roboto;
+}
+   }
+
+h2{
+	font-family: roboto;
+    font-size: 3rem;
+    color: rgba(157, 34, 34,0.8);
+    flex:1;
+    padding: 1rem;
+    margin:1px;
+    animation-duration: 3s;
+    animation-name: aparecer;
+}
+
+
+h3{
+   font-family: roboto;
+    font-size: 3rem;
+    color: rgba(157, 34, 34,0.8);
+    flex:5;
+    padding: 1rem;
+    margin:2px;
+    animation-duration: 3s;
+    animation-name: aparecer;
+}
+
+
+h4{
+    font-family: roboto;
+    animation-duration: 3s;
+   animation-name: aparecer; 
+   margin:2px;
+  font-size: 2rem;
+   padding: 1rem;
+   
+}
+
+body{
+    
+    padding-bottom: 50px;
+}
+
+#num{
+	padding: 5px 0;
+	text-align: center;
+}
+
+nav{
+   background-color: rgba(252, 244, 219, 1.0);
+   padding: 30px;
+   transform: rotateX(25deg);
+   transform: rotateY(15deg);
+   
+}
+
+
+
+nav ul {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+nav ul li {
+	       display: inline-block;
+         list-style: none;
+         margin-right: 20px
+
+       }
+
+nav ul li a {
+           color: #6C0F0F;
+           text-decoration: none;
+           font-size: 2rem;
+           text-transform: capitalize;
+           display: inline-block;
+          
+}
+
+nav ul li a:hover{
+	              color: rgb(11, 201, 242);
+}
+
+nav ul li a .active{
+	                text-decoration: overline;
+}
+
+header{
+      width: 50%;
+      background-image: url(..//img/header.jpg) ;
+      flex: 1;
+      float: right;
+      display: flex;
+      height: 400px;
+      transition: heigt 2s;
+}
+
+header:hover{
+     height: 500px;
+}
+
+main p{
+      width: 50%;
+      background-color:lightblue;      
+      display: flex;
+      flex: 1;
+      box-sizing: border-box;
+      margin-top: 20px;
+      text-transform: none;
+      justify-content:center;
+      padding: 20px;
+      animation-duration: 2s;
+      animation-name: aparecer;
+      background-image:linear-gradient(lightblue,lightpink) ;
+      font-family: roboto;
+}
+
+
+
+footer p {
+      padding: 2px;
+      text-align: center;
+      color: rgba(169, 69, 154, 1.0);
+      margin:2px;
+      flex:1;
+      animation-duration: 3s;
+      animation-name: aparecer;
+      font-family: roboto;
+      
+}
+
+footer img{
+       position: fixed;
+       bottom: 80px;
+       right: 50px;
+
+}
+
+
+table{
+    position: relative;
+    width: 40%;
+    flex:1;
+    margin:1px;
+    border: 5px solid grey;
+
+
+ }   
+
+fieldset{
+    position: relative;
+    width: 50%;
+    flex:2;
+    margin:2px;
+    border: 2px solid grey;
+    padding: 8px;
+    
+}
+
+
+#id{
+     display: grid;  
+            grid-template-rows: 100px 1 fr 1 fr 80px;
+            grid-template-areas: "nav nav nav nav nav "
+                                 "main main"                                                                      
+                                 "footer footer "
+                  
+}
+
+
+#botonera{
+       display: grid;     
+      
+
+}
+
+#centro{
+    display: block;
+
+
+      
+}
+
+#pie{
+    display: grid;
+
+}
+
+footer{
+    grid-area: footer;
+}
+
+nav{
+    grid-area: nav;
+}
+
+main{
+   grid-area: main;
+}
+
+
+
+nav, main, footer{
+    padding: 20px;
+
+}
+
+
+
+@media only screen and (min-width: 768px){
+    body{grid-template-rows: 100px 1 fr 1 fr 80px;
+
+        }
+}
+
+@media only screen and (min-width: 1200px){
+    body{grid-template-rows: 100px 1 fr 1 fr 80px;
+
+        }
+}
+
+.border{
+      border: 2px solid palevioletred;
+      
+}
+ 
+.miestilo{
+    text-align: center;
+} 
+
+@media(max-width: 992px){
+
+               .miestilo{
+    text-align: center;
+} 
+
+.main{
+     margin-top: 20px;
+     text-transform: none;
+     justify-content:center;
+     padding: 20px;
+}
+
+.header{
+      width: 50%;
+      background-image: url(..//img/header.jpg) ;
+      flex: 1;
+      float: right;
+      display: flex;
+      height: 400px;
+}
+
+.footer{
+       border: 2px ;
+       padding: 10p;
+       margin: 10px;
+       flex: 1;
+       text-align: center;
+    background-color:#FBFCCD;
+
+}
+
+.nav{
+   background-color: rgba(252, 244, 219, 1.0);
+   padding: 30px;
+   transform: rotateX(25deg);
+   transform: rotateY(15deg);
+   
+
+}
+
