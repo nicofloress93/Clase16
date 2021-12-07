@@ -1,0 +1,17 @@
+nav{
+	ul{ 
+		display: $d-flex;
+		justify-content: space-between;
+		li{
+			list-style: none;
+			a{
+				color:$primary;
+				&hover{
+					color:$secondary;
+
+				}
+
+			}
+		} 
+	} 
+}
